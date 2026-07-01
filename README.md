@@ -28,3 +28,4 @@ Google Play and the App Store both require.
 Replace every highlighted `[placeholder]` in `lib/content.ts` (contact email,
 company name/address, website, retention window) with your real details, and
 confirm the policy matches the features your app actually uses.
+# spl.customers-privacy_policy
