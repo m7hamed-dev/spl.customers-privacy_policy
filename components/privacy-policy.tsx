@@ -78,14 +78,7 @@ export default function PrivacyPolicy() {
             <span>{C.APP_NAME}</span>
           </a>
           <div className="flex items-center gap-3 ms-auto">
-            {C.HOME_HREF && (
-              <a
-                href={C.HOME_HREF}
-                className="hidden sm:inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary transition"
-              >
-                <Icon name="arrow-left" className="w-4 h-4" /> Home
-              </a>
-            )}
+
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -109,21 +102,13 @@ export default function PrivacyPolicy() {
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary-dark dark:text-primary ring-1 ring-primary/20">
               <Icon name="shield" className="w-4 h-4" /> Legal
             </div>
-            <h1 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold tracking-tight">Privacy Policy</h1>
+            <h1 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold tracking-tight">Privacy Policy for {C.APP_NAME}</h1>
             <p className="mt-3 text-slate-500 dark:text-slate-400">Last updated: {C.LAST_UPDATED}</p>
           </div>
         </section>
 
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
-          {/* Editable-placeholders notice */}
-          <div className="rounded-brand border border-amber-300/60 bg-amber-50 dark:border-amber-400/20 dark:bg-amber-400/10 p-4 text-sm text-amber-900 dark:text-amber-200 flex gap-3">
-            <Icon name="info" className="w-5 h-5 shrink-0 mt-0.5" />
-            <p>
-              Before publishing, replace every{' '}
-              <mark className="rounded bg-amber-200/70 px-1 dark:bg-amber-400/20 dark:text-amber-100">[highlighted placeholder]</mark> with
-              your real details, and confirm the policy matches the features your app actually uses.
-            </p>
-          </div>
+
 
           {/* Table of contents */}
           <nav aria-label="Contents" className="mt-10 rounded-brand border border-black/5 dark:border-white/10 p-6">

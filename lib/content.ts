@@ -18,7 +18,7 @@ export const sections: Section[] = [
     id: 'introduction',
     title: 'Introduction',
     blocks: [
-      { kind: 'p', text: 'Welcome to SPL Customers ("App", "we", "our", or "us").' },
+      { kind: 'p', text: 'Welcome to SPL Customers ("App").' },
       { kind: 'p', text: 'This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our mobile application available on the Google Play Store and the Apple App Store.' },
       { kind: 'p', text: 'By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.' },
     ],
@@ -30,18 +30,22 @@ export const sections: Section[] = [
       { kind: 'p', text: 'We may collect the following categories of information:' },
       { kind: 'h', text: 'Personal Information' },
       { kind: 'p', text: 'Depending on the features you use, we may collect:' },
-      { kind: 'ul', items: ['Full name', 'Email address', 'Phone number', 'Profile photo', 'Account credentials', 'Billing information'] },
-      { kind: 'h', text: 'Device Information' },
-      { kind: 'p', text: 'We may automatically collect:' },
+      {
+        kind: 'ul', items: ['Full name', 'Phone number'
+        ]
+      },
+      // 'Profile photo', 'Account credentials', 'Billing information'
+      // { kind: 'h', text: 'Device Information' },
+      // { kind: 'p', text: 'We may automatically collect:' },
       { kind: 'ul', items: ['Device type', 'Device model', 'Operating system', 'App version', 'Unique device identifiers', 'Mobile network information'] },
       { kind: 'h', text: 'Usage Information' },
       { kind: 'p', text: 'We may collect:' },
-      { kind: 'ul', items: ['App interactions', 'Features used', 'Session duration', 'Crash logs', 'Performance diagnostics'] },
-      { kind: 'h', text: 'Location Information' },
-      { kind: 'p', text: 'If you grant permission, we may collect:' },
-      { kind: 'ul', items: ['Precise location', 'Approximate location'] },
-      { kind: 'p', text: 'Location data is used only for:' },
-      { kind: 'ul', items: ['Location-based services', 'Delivery tracking', 'Nearby content recommendations'] },
+      // { kind: 'ul', items: ['App interactions', 'Features used', 'Session duration', 'Crash logs', 'Performance diagnostics'] },
+      // { kind: 'h', text: 'Location Information' },
+      // { kind: 'p', text: 'If you grant permission, we may collect:' },
+      // { kind: 'ul', items: ['Precise location', 'Approximate location'] },
+      // { kind: 'p', text: 'Location data is used only for:' },
+      // { kind: 'ul', items: ['Location-based services', 'Delivery tracking', 'Nearby content recommendations'] },
     ],
   },
   {
@@ -49,49 +53,49 @@ export const sections: Section[] = [
     title: 'How We Use Your Information',
     blocks: [
       { kind: 'p', text: 'We use collected information to:' },
-      { kind: 'ul', items: ['Provide and maintain the App', 'Create and manage accounts', 'Process transactions', 'Improve user experience', 'Personalize content', 'Send notifications', 'Respond to support requests', 'Prevent fraud and abuse', 'Comply with legal obligations'] },
+      { kind: 'ul', items: ['Provide and maintain the App', 'Create and manage accounts', 'Process transactions', 'Improve user experience'] },
     ],
   },
-  {
-    id: 'permissions',
-    title: 'Permissions Used by the App',
-    blocks: [
-      { kind: 'p', text: 'The App may request access to:' },
-      { kind: 'h', text: 'Camera' },
-      { kind: 'p', text: 'Used for:' },
-      { kind: 'ul', items: ['Taking photos', 'Scanning QR codes', 'Uploading profile images'] },
-      { kind: 'h', text: 'Photos and Media' },
-      { kind: 'p', text: 'Used for:' },
-      { kind: 'ul', items: ['Selecting and uploading files'] },
-      { kind: 'h', text: 'Location' },
-      { kind: 'p', text: 'Used for:' },
-      { kind: 'ul', items: ['Showing nearby services', 'Delivery tracking', 'Location-based features'] },
-      { kind: 'h', text: 'Microphone' },
-      { kind: 'p', text: 'Used for:' },
-      { kind: 'ul', items: ['Voice messages', 'Audio recording features'] },
-      { kind: 'h', text: 'Notifications' },
-      { kind: 'p', text: 'Used for:' },
-      { kind: 'ul', items: ['Alerts', 'Updates', 'Marketing communications (where permitted)'] },
-    ],
-  },
-  {
-    id: 'third-party',
-    title: 'Third-Party Services',
-    blocks: [
-      { kind: 'p', text: 'The App may use third-party services that collect information according to their own privacy policies.' },
-      { kind: 'p', text: 'Examples include:' },
-      { kind: 'ul', items: ['Google Firebase', 'Google Analytics for Firebase', 'Google Maps Platform', 'Apple App Store Services', 'Google Play Services', '[Other Services]'] },
-    ],
-  },
-  {
-    id: 'data-sharing',
-    title: 'Data Sharing',
-    blocks: [
-      { kind: 'p', text: 'We do not sell personal information.' },
-      { kind: 'p', text: 'We may share information with:' },
-      { kind: 'ul', items: ['Service providers', 'Payment processors', 'Cloud hosting providers', 'Analytics providers', 'Legal authorities when required by law'] },
-    ],
-  },
+  // {
+  //   id: 'permissions',
+  //   title: 'Permissions Used by the App',
+  //   blocks: [
+  //     { kind: 'p', text: 'The App may request access to:' },
+  //     { kind: 'h', text: 'Camera' },
+  //     { kind: 'p', text: 'Used for:' },
+  //     { kind: 'ul', items: ['Taking photos', 'Scanning QR codes', 'Uploading profile images'] },
+  //     { kind: 'h', text: 'Photos and Media' },
+  //     { kind: 'p', text: 'Used for:' },
+  //     { kind: 'ul', items: ['Selecting and uploading files'] },
+  //     { kind: 'h', text: 'Location' },
+  //     { kind: 'p', text: 'Used for:' },
+  //     { kind: 'ul', items: ['Showing nearby services', 'Delivery tracking', 'Location-based features'] },
+  //     { kind: 'h', text: 'Microphone' },
+  //     { kind: 'p', text: 'Used for:' },
+  //     { kind: 'ul', items: ['Voice messages', 'Audio recording features'] },
+  //     { kind: 'h', text: 'Notifications' },
+  //     { kind: 'p', text: 'Used for:' },
+  //     { kind: 'ul', items: ['Alerts', 'Updates', 'Marketing communications (where permitted)'] },
+  //   ],
+  // },
+  // {
+  //   id: 'third-party',
+  //   title: 'Third-Party Services',
+  //   blocks: [
+  //     { kind: 'p', text: 'The App may use third-party services that collect information according to their own privacy policies.' },
+  //     { kind: 'p', text: 'Examples include:' },
+  //     { kind: 'ul', items: ['Google Firebase', 'Google Analytics for Firebase', 'Google Maps Platform', 'Apple App Store Services', 'Google Play Services', '[Other Services]'] },
+  //   ],
+  // },
+  // {
+  //   id: 'data-sharing',
+  //   title: 'Data Sharing',
+  //   blocks: [
+  //     { kind: 'p', text: 'We do not sell personal information.' },
+  //     { kind: 'p', text: 'We may share information with:' },
+  //     { kind: 'ul', items: ['Service providers', 'Payment processors', 'Cloud hosting providers', 'Analytics providers', 'Legal authorities when required by law'] },
+  //   ],
+  // },
   {
     id: 'data-retention',
     title: 'Data Retention',
@@ -133,7 +137,9 @@ export const sections: Section[] = [
     title: 'Account Deletion',
     blocks: [
       { kind: 'p', text: 'Users may request deletion of their account and personal data by:' },
-      { kind: 'ul', items: ['Using the in-app account deletion feature, or', 'Contacting us by email at [support@example.com]'] },
+      {
+        kind: 'ul', items: ['Using the in-app account deletion feature, or', 'Contacting us by email at [abdullah.sa.albadi@gmail.com]']
+      },
       { kind: 'p', text: 'Deletion requests will be processed within [30] days unless legal retention obligations apply.' },
       { kind: 'p', text: 'Google Play and the Apple App Store may require a clear account deletion mechanism if users can create accounts.' },
     ],
@@ -160,7 +166,7 @@ export const sections: Section[] = [
     title: 'Contact Us',
     blocks: [
       { kind: 'p', text: 'If you have questions about this Privacy Policy, please contact:' },
-      { kind: 'ul', items: ['Company Name: [Company Name]', 'Address: [Company Address]', 'Email: [support@example.com]', 'Website: [https://example.com]'] },
+      { kind: 'ul', items: ['Company Name: Save Point Co', 'Address: Saudi Arabia, Unizah', 'Email: abdullah.sa.albadi@gmail.com', 'Website: https://savepoints.sa/'] },
     ],
   },
   {
@@ -168,7 +174,7 @@ export const sections: Section[] = [
     title: 'Google Play Data Safety Disclosure Checklist',
     blocks: [
       { kind: 'p', text: 'When publishing to Google Play, document whether your app collects:' },
-      { kind: 'ul', items: ['Name', 'Email', 'Phone Number', 'Location', 'Photos/Videos', 'Audio Files', 'Files and Documents', 'Contacts', 'Device IDs', 'App Activity', 'Crash Logs', 'Diagnostics', 'Payment Information'] },
+      { kind: 'ul', items: ['Name', 'Phone Number'] },
       { kind: 'p', text: 'Ensure that the answers in your Google Play Data Safety Form match this Privacy Policy exactly.' },
     ],
   },
@@ -177,7 +183,7 @@ export const sections: Section[] = [
     title: 'Apple App Privacy Nutrition Labels Checklist',
     blocks: [
       { kind: 'p', text: 'When publishing to the Apple App Store, document whether you collect:' },
-      { kind: 'ul', items: ['Contact Info', 'Health & Fitness Data', 'Financial Information', 'Location', 'Sensitive Information', 'Contacts', 'User Content', 'Browsing History', 'Search History', 'Identifiers', 'Usage Data', 'Diagnostics'] },
+      { kind: 'ul', items: ['Name', 'Phone Number'] },
       { kind: 'p', text: 'Ensure that your App Store Connect privacy labels match this Privacy Policy exactly.' },
     ],
   },
